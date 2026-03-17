@@ -170,7 +170,7 @@ class ToolRegistry:
     
     def has_tool(self, name: str) -> bool:
         """Checks whether or not a tool exists"""
-        return name in registry._tools
+        return name in self._tools
 
     def is_toolset_available(self, toolset: str) -> bool:
         """Check if a toolset's requirements are met.
